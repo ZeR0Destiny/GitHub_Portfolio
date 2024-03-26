@@ -13,18 +13,25 @@
         crossorigin="anonymous"></script>
 
     <style>
-        .custom-navbar {
-            background-color: #0e1a22 !important;
+        .bgw {
+            background-image: url("images/main-bg.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            align-items: center;
+            height: 100vh;
+
         }
     </style>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg sticky-top bg-dark">
+    <!-- <nav class="navbar navbar-expand-lg">
         <div class="container d-flex mb3" style="background-color: blue;">
-            <div style="background-color: blueviolet;">
-                <a class="navbar-brand fs-1 fw-bolder" href="#">PORTFOLIO</a>
+            <div>
+                <a class="navbar-brand" href="index.html">PORTFOLIO</a>
             </div>
             <div style="background-color: yellowgreen;">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -33,30 +40,85 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
+                    <div class="navbar-nav" id="navbar">
                         <a class="nav-link active" aria-current="page" href="#Home">Home</a>
                         <a class="nav-link" href="#AboutMe">About Me</a>
-                        <a class="nav-link" href="#">My Work</a>
+                        <a class="nav-link" href="#MyWork">My Work</a>
                         <a class="nav-link" href="#">Contact</a>
                     </div>
                 </div>
             </div>
         </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container d-flex mb3">
+            <div><a class="navbar-brand" href="#">PORTFOLIO</a></div>
+            <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#MyWork">Link</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Link
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li> -->
+                        <!-- <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Link</a>
+                  </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
     </nav>
 
+    <!-- <section class="py-5" id="Home"> -->
     <div class="container" id="Home">
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam minima blanditiis fugit, esse enim
-            excepturi,
-            eos aliquid iusto repellendus sapiente nobis harum illo expedita. Sapiente saepe blanditiis voluptate sint
-            quas.
-        </p>
-    </div>
 
+        <div class="bgw">
+            <div class="d-flex justify-content-center">
+                <!-- <div>
+                    <img src="images/item-1.jpg" alt="">
+                </div> -->
+                <div class="d-flex flex-column text-center">
+                    <span class="text-uppercase">Kevin Chan</span></h1>
+                    <p class="text-wrap" style="width: 30rem;">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam minima blanditiis fugit, esse
+                        enim
+                        excepturi,
+                        eos aliquid iusto repellendus sapiente nobis harum illo expedita. Sapiente saepe blanditiis
+                        voluptate
+                        sint
+                        quas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </section> -->
+
+    <!-- <div data-bs-spy="scroll" data-bs-target="#navbar"> -->
     <div class="container" style="background-color: crimson;" id="AboutMe">
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cupiditate neque. Explicabo, debitis? Itaque
-            nihil adipisci alias aperiam, quisquam repudiandae totam rem est officia consequuntur doloribus laboriosam
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, cupiditate neque. Explicabo, debitis?
+            Itaque
+            nihil adipisci alias aperiam, quisquam repudiandae totam rem est officia consequuntur doloribus
+            laboriosam
             praesentium, nisi placeat?
         </p>
 
@@ -68,8 +130,10 @@
     <div class="mt-5">
         <div class="container" style="background-color: yellow;" id="MyWork">
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita beatae omnis dolores amet nesciunt
-                autem doloremque, quibusdam magni odit voluptates veritatis, sed est, suscipit possimus eum optio. Sint,
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita beatae omnis dolores amet
+                nesciunt
+                autem doloremque, quibusdam magni odit voluptates veritatis, sed est, suscipit possimus eum optio.
+                Sint,
                 enim nulla!
             </p>
 
@@ -78,6 +142,8 @@
             </div>
         </div>
     </div>
+    <!-- </div> -->
+
 </body>
 
 </html>
